@@ -2,6 +2,7 @@
 import re
 import requests
 from bs4 import BeautifulSoup
+import click
 
 
 ## TODO setup cron job or http://alvinalexander.com/mac-os-x/mac-osx-startup-crontab-launchd-jobs
@@ -34,7 +35,7 @@ class UnSplashImageDownloader:
         downloaded_paths = []
         for url in image_urls:
             matches = UnSplashImageDownloader.PHOTO_REG_EXPR.match(url)
-            print 'downloading image {url}...'.format(url=url)
+            click.echo(click.style('Downloading from %s' % url, fg='green'))
             if matches:
                 full_path = '{picture_folder}/{file_name}.{ext}' \
                     .format(picture_folder=self.download_to, file_name=matches.group(1), ext=matches.group(2))

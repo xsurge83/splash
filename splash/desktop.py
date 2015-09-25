@@ -5,9 +5,9 @@ UPDATE_BACKGROUND_SCRIPT = "sqlite3 ~/Library/Application\ Support/Dock/desktopp
 
 
 def set_desktop_background(filename):
-    print filename
     output = UPDATE_BACKGROUND_SCRIPT % filename
     subprocess.Popen(output, shell=True)
+    return True
 
 
 __all__ = ['set_desktop_background']
