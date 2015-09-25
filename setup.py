@@ -1,11 +1,12 @@
 from setuptools import setup
 
 setup(
-    name='acacia',
-    version='0.0.1',
+    name='splash',
+    version='0.0.4',
+    packages=['splash'],
     entry_points={
         'console_scripts': [
-            'acacia = cli.main:main'
+            'splash = splash.main:main'
         ]
     }
 )
