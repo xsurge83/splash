@@ -6,7 +6,7 @@ setup(
     packages=['splash'],
     entry_points={
         'console_scripts': [
-            'splash = splash.main:main'
+            'splash = splash.main:cli'
         ]
     }
 )
