@@ -4,7 +4,7 @@
  desktop.
   
 ### Supports 
-  - OSX
+  - mac
 
 ### Installation
 
