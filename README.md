@@ -30,5 +30,5 @@ below. Before installation, invoke via `python -m splash`.
 
 ```
 splash download  --folder  # Download images from splash to specified folder 
-splash menu               # View and execute menu 
+splash menu                # View and execute menu 
 ```
