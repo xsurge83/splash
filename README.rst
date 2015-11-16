@@ -1,0 +1,12 @@
+# MANIFEST.in
+exclude .gitignore
+exclude .coverage
+exclude .travis.yml
+include README.rst
+include setup.cfg
+prune .cache
+prune .git
+prune build
+prune dist
+recursive-include splash
+recursive-exclude *.egg-info *
